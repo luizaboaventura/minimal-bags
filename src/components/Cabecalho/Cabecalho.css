@@ -1,0 +1,115 @@
+.cabecalho__input {
+    border: none;
+    border-bottom: solid 1.5px black;
+}
+
+.buscar {
+    position: relative;
+    width: 200px;
+}
+
+.buscar input {
+    width: 100%;
+    border: none;
+    padding: .1em .5em;
+}
+
+.buscar input::placeholder {
+    padding-left: .5em;
+    font-size: 1.2em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.botao__buscar {
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    z-index:10;
+    border: none;
+    background: transparent;
+    padding-right: .5em;
+    outline: none;
+    cursor: pointer;
+}
+
+.cabecalho__icones {
+    display: flex;
+    gap: .5em;
+}
+
+.modal {   
+    position: static;
+    margin: 150px auto;
+    width: 350px;
+    height: 320px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    z-index: 1;
+    border: none;
+}
+  
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(217, 217, 217, 0.8);
+    z-index: 1;
+}
+
+.modal input {
+    width: 300px;
+    height: 40px;
+    margin: .5em 0;
+    padding-left: 1em;
+}
+
+.modal__titulo {
+    margin: 1em 0 .5em;
+}
+
+.modal__enviar {
+    background-color: #CEC6BA;
+    width: 300px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: .5em 0;
+    font-size: 1em;
+    color: white;
+    font-size: 1em;
+    margin-top: .5em;
+    border: none;
+    cursor: pointer;
+}
+
+.modal__enviar:hover {
+    background-color: #d0cdc8;
+}
+
+.modal__texto {
+    font-size: .8em;
+    margin-top: 1em;
+}
+
+.modal__texto u{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 428px){
+    .cabecalho__input {
+        order: 1;
+    } 
+
+    .buscar {
+        width: 100vw;
+        padding: .5em .5em;
+        border-top: solid 1.5px #CEC6BA;
+        border-bottom: solid 1.5px #CEC6BA;
+    }
+
+    .botao__buscar {
+        top: 10px;
+    }
+       
+}

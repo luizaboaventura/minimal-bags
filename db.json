@@ -1,0 +1,52 @@
+{
+  "dados":[
+    {
+      "id":1,
+      "slug":"bolsa-petunia",
+      "nome":"Bolsa Petúnia",
+      "valor":"R$ 159,90",
+      "imagem":"https://raw.githubusercontent.com/luizaboaventura/imagens/main/bolsa-petunia.jpg",
+      "descricao":"Bolsa em formato retangular, com duas opções de alça: de mão e transversal. Em couro ecológico. Cor: Preta. Dimensões: 20x18x6cm (L x A x P)"
+    },
+    {
+      "id":2,
+      "slug":"bolsa-magnolia",
+      "nome":"Bolsa Magnólia",
+      "valor":"R$ 179,90",
+      "imagem":"https://raw.githubusercontent.com/luizaboaventura/imagens/main/bolsa-magnolia.jpg",
+      "descricao":"Bolsa em formato retangular com alça transversal. Em couro ecológico. Cor: Marrom Pinhão. Dimensões: 15x20x7cm (L x A x P)."
+    },
+    {
+      "id":3,
+      "slug":"bolsa-camelia",
+      "nome":"Bolsa Camélia",
+      "valor":"R$ 199,90",
+      "imagem":"https://raw.githubusercontent.com/luizaboaventura/imagens/main/bolsa-camelia.jpg",
+      "descricao":"Bolsa com bordas arredondadas e com alça de mão. Em couro ecológico. Cor: Marrom Pinhão. Dimensões: 15x20x7cm (L x A x P)."
+    },
+    {
+      "id":4,
+      "slug":"bolsa-acacia",
+      "nome":"Bolsa Acácia",
+      "valor":"R$ 139,90",
+      "imagem":"https://raw.githubusercontent.com/luizaboaventura/imagens/main/bolsa-acacia.jpg",
+      "descricao":"Bolsa em formato retangular, com duas opções de alça: de mão e transversal. Em couro ecológico. Cor: Off-white. Dimensões: 12x9x6cm (L x A x P)."
+    },
+    {
+      "id":5,
+      "slug":"bolsa-iris",
+      "nome":"Bolsa Íris",
+      "valor":"R$ 149,90",
+      "imagem":"https://raw.githubusercontent.com/luizaboaventura/imagens/main/bolsa-iris.jpg",
+      "descricao":"Bolsa com bordas arredondadas e com alça de mão. Em couro ecológico. Cor: Preta. Dimensões: 15x12x7cm (L x A x P)."
+    },
+    {
+      "id":6,
+      "slug":"bolsa-melissa",
+      "nome":"Bolsa Melissa",
+      "valor":"R$ 169,90",
+      "imagem":"https://raw.githubusercontent.com/luizaboaventura/imagens/main/bolsa-melissa.jpg",
+      "descricao":"Bolsa em formato retangular com alça transversal. Em couro ecológico. Cor: Caramelo. Dimensões: 18x13x7cm (L x A x P)."
+    }
+  ]
+}

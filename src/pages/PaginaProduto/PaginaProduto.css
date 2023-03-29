@@ -1,0 +1,119 @@
+.pagina__produto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.voltar {
+    width: 780px;
+    max-width: 90%;
+    text-align: left;
+    margin-top: 30px;
+    text-decoration: none;
+    color:black;
+    cursor: pointer;
+}
+
+.voltar::before {
+    content: "< ";
+}
+
+.voltar:visited {
+    color: black;
+}
+
+.produto__principal {
+    display: flex;
+    width: 780px;
+    max-width: 90%;
+    margin: 20px 0 30px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.produto__imagem {
+    width: 380px;
+}
+
+.produto__titulo {
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 1em;
+    padding-bottom: .5em;
+    font-size: 1.2em;
+    border-bottom: 2px solid #CEC6BA;
+}
+
+.produto__preco {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.produto__botao {
+    background-color: #CEC6BA;
+    width: 380px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: .5em 0;
+    font-size: 1em;
+    color: white;
+    font-size: .9em;
+    margin-top: 1em;
+    border: none;
+    cursor: pointer;
+}
+
+.produto__botao:hover {
+    background-color: #d0cdc8;
+}
+
+.envio {
+    display: flex;
+}
+
+.envio input::placeholder {
+    padding-left: 1em;
+}
+
+.produto__envio {
+    margin-top: 1em;
+}
+
+.produto__envio p {
+    font-size: .9em;
+}
+
+.produto__envio input {
+    padding: .8em 0;
+    border: solid 1px black;
+}
+
+.produto__envio input {
+    font-size: .7em;
+}
+
+.produto__envio button {
+    text-transform: uppercase;
+    padding: 0 1em;
+    border: solid 1px black;
+    margin-left: 5px;
+}
+
+.produto__secundario {
+    width: 780px;
+    max-width: 90%;
+    margin-bottom: 60px;
+}
+
+.secundario__titulo {
+    font-weight: 500;
+    padding-bottom: .5em;
+    border-bottom: 2px solid #CEC6BA;
+    margin-bottom: 1em;
+}
+
+.secundario__descricao {
+    font-weight: 300;
+}
