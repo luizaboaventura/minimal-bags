@@ -9,7 +9,7 @@ export const obterProdutos = async () => {
 
 export const obterProdutoPorSlug = async (slug) => {
 
-    const resposta = await axios.get("http://localhost:3000/dadoss", {
+    const resposta = await axios.get("http://localhost:3000/dados", {
         params: {
             slug
         }
