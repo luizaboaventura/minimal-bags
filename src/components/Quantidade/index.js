@@ -7,7 +7,7 @@ import './Quantidade.css';
 
 export default function Quantidade () {
 
-    const [quantidade, setQuantidade] = useState(0);
+    const [quantidade, setQuantidade] = useState(1);
 
     function aumentaQuantidade() {
         setQuantidade(quantidade + 1);
