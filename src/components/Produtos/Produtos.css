@@ -47,6 +47,11 @@
     background-color: #d0cdc8;
 }
 
+.erro {
+    margin: 100px auto;
+    height: 75vh;
+}
+
 @media screen and (max-width: 428px){
     .produtos__lista {
         justify-content: center;

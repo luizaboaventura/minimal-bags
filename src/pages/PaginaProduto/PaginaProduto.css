@@ -117,3 +117,8 @@
 .secundario__descricao {
     font-weight: 300;
 }
+
+.erro {
+    margin-top: 100px;
+    height: 75vh;
+}
