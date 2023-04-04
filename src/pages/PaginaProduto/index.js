@@ -1,7 +1,7 @@
 import { useQuery } from "react-query";
 import { useNavigate, useParams } from "react-router-dom";
 import Quantidade from "../../components/Quantidade";
-import { obterProdutoPorSlug } from "../../http";
+import { obterEnderecoPorCep, obterProdutoPorSlug } from "../../http";
 
 import "./PaginaProduto.css";
 import { useEffect, useState } from "react";
@@ -11,15 +11,25 @@ export default function PaginaProduto() {
 
     const navigate = useNavigate();
     const params = useParams();
-    const { data, isLoading, error } = useQuery(['produtoPorSlug', params.slug], () => obterProdutoPorSlug(params.slug));
-    const [dados, setDados] = useState([]);
 
+    const { data, isLoading, error } = useQuery(['produtoPorSlug', params.slug], () => obterProdutoPorSlug(params.slug));
+    const [ dados, setDados ] = useState([]);
+
+    const [cep, setCep] = useState('');
+    const { data: endereco } = useQuery(['enderecoPorCep', cep], () => obterEnderecoPorCep(cep));
+    
     useEffect(() => {
         if (data) {
             setDados(data)
         }
     }, [data]);
-
+    
+    const handleChange = (e) => {
+        if (e.target.value === 9) {
+            const cepFinal = e.target.value;
+            setCep(cepFinal)
+        }
+    }
     return (
         <div className="pagina__produto">
             <p onClick={() => navigate(-1)} className="voltar">Voltar</p>
@@ -40,7 +50,7 @@ export default function PaginaProduto() {
                         <div className="produto__envio">
                             <p>Envio:</p>
                             <div className="envio">
-                                <input type="text" placeholder="Seu CEP"/>
+                                <input value={cep} type="text" placeholder="Seu CEP" onChange={handleChange}/>
                                 <button>Calcular</button>
                             </div>
                         </div>

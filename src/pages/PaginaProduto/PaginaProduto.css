@@ -73,6 +73,10 @@
     display: flex;
 }
 
+.envio button {
+    cursor: pointer;
+}
+
 .envio input::placeholder {
     padding-left: 1em;
 }

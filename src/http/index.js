@@ -17,3 +17,9 @@ export const obterProdutoPorSlug = async (slug) => {
 
     return resposta.data[0];
 }
+
+export const obterEnderecoPorCep = async (cep) => {
+    const resposta = await axios.get(`https://cdn.apicep.com/file/apicep/${cep}.json`)
+    
+    return resposta.data;
+}
