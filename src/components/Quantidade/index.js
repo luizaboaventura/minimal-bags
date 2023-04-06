@@ -1,20 +1,21 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import { ImMinus } from "react-icons/im";
 import { ImPlus } from "react-icons/im";
 
 import './Quantidade.css';
+import Context from "../ContextApi/Context";
 
 
 export default function Quantidade () {
 
-    const [quantidade, setQuantidade] = useState(1);
+    const [quantidade, setQuantidade] = useContext(Context);
 
     function aumentaQuantidade() {
         setQuantidade(quantidade + 1);
     }
 
     function diminuiQuantidade() {
-        if (quantidade > 0) setQuantidade(quantidade - 1);
+        if (quantidade > 1) setQuantidade(quantidade - 1);
     }
 
     return (

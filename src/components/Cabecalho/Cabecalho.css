@@ -96,6 +96,28 @@
     cursor: pointer;
 }
 
+.cart {
+    display: flex;
+    position: relative;
+}
+
+.numero {
+    border: none;
+    background-color: #CEC6BA;
+    clip-path: circle();
+    color: black;
+    cursor: pointer;
+    font-size: .8em;
+    width: 1.2em;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: .2em;
+    position: absolute;
+    left: 12px;
+    bottom: 9px;
+}
+
 @media screen and (max-width: 428px){
     .cabecalho__input {
         order: 1;

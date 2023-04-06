@@ -126,3 +126,8 @@
     margin-top: 100px;
     height: 75vh;
 }
+
+.endereco {
+    font-weight: 300;
+    margin-top: 1em;
+}

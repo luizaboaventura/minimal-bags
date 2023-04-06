@@ -23,13 +23,7 @@ export default function PaginaProduto() {
             setDados(data)
         }
     }, [data]);
-    
-    const handleChange = (e) => {
-        if (e.target.value === 9) {
-            const cepFinal = e.target.value;
-            setCep(cepFinal)
-        }
-    }
+
     return (
         <div className="pagina__produto">
             <p onClick={() => navigate(-1)} className="voltar">Voltar</p>
@@ -50,9 +44,16 @@ export default function PaginaProduto() {
                         <div className="produto__envio">
                             <p>Envio:</p>
                             <div className="envio">
-                                <input value={cep} type="text" placeholder="Seu CEP" onChange={handleChange}/>
-                                <button>Calcular</button>
+                                <input value={cep} type="text" placeholder="Digite seu CEP" onChange={e => setCep(e.target.value)}/>
+                                {/* <button onClick={limparCampo}>Calcular</button> */}
                             </div>
+                            {endereco && 
+                            <div className="endereco">
+                                <p>CEP: {endereco.cep}</p>
+                                <p>{endereco.logradouro}</p>
+                                <p>Bairro: {endereco.bairro}</p>
+                                <p>{endereco.localidade}/{endereco.uf}</p>
+                            </div>}
                         </div>
                     </div>
                 </div>
