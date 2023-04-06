@@ -9,6 +9,7 @@ E-commerce com duas telas: principal e produtos.
 - React
 - React Router
 - JSON Server
+- React Query
 
 ## 💻 Resultado
 <i>Em breve...</i>
